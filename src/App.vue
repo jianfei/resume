@@ -34,7 +34,7 @@ body,
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.4;
 }
 
 html,

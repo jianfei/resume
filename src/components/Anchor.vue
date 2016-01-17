@@ -1,12 +1,31 @@
 <template>
-    <a class="anchor">
+    <a class="anchor" :class="{watching: isWatching}"
+       @click.prevent="onClick">
         <span><slot></slot></span>
     </a>
 </template>
 
 <script>
 
+import $ from 'jquery';
+
 export default {
+    data() {
+        return {
+            isWatching: false
+        };
+    },
+    methods: {
+        onClick() {
+            var scrollTop = $(this.$el.hash).position().top;
+            $('#app-body').animate({scrollTop: scrollTop}, 300);
+        }
+    },
+    events: {
+        ['hash-change']() {
+            this.isWatching = location.hash === this.$el.hash;
+        }
+    }
 };
 
 </script>
@@ -16,6 +35,18 @@ export default {
 @import '../Shared';
 
 #anchor-list {
+
+    @for $i from 1 through 10 {
+        .group[group="resume"] .anchor:nth-child(#{$i}):after {
+            background-color: nth($dark-colors, $i);
+            border-bottom: 1px solid nth($dark-colors, $i);
+        }
+
+        .group[group="portfolio"] .anchor:nth-child(#{$i}):after {
+            background-color: nth($dark-colors, ($i + 4) % 10 + 1);
+            border-bottom: 1px solid nth($dark-colors, ($i + 4) % 10 + 1);
+        }
+    }
 
     .anchor {
         position: relative;
@@ -52,13 +83,6 @@ export default {
             background-color: nth($dark-colors, 1);
             border-bottom: 1px solid nth($dark-colors, 1);
             transition: all .3s ease;
-        }
-
-        @for $i from 1 through 10 {
-            &:nth-child(#{$i}):after {
-                background-color: nth($dark-colors, $i);
-                border-bottom: 1px solid nth($dark-colors, $i);
-            }
         }
 
         &:hover,
