@@ -49,7 +49,7 @@
     "guard-for-in": 0,
     "handle-callback-err": [2, "^(err|error)$" ],
     "indent": 2,
-    "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
+    "key-spacing": 0,
     "linebreak-style": 0,
     "lines-around-comment": 0,
     "max-nested-callbacks": 0,

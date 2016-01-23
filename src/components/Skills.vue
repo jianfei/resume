@@ -2,12 +2,12 @@
     <div id="skills">
         <div class="skill">
             <div class="title">Front-end Web Development</div>
-            <p>Be able to develop high-quality web pages using HTML5, CSS3 and JavaScript. Versed in modern web libraries and tools such as jQuery, Underscore.js, Lodash.js and ECharts</p>
+            <p>Be able to develop high-quality web pages using HTML5, CSS3 and JavaScript. Versed in modern web libraries and tools such as jQuery, Underscore.js, Lodash.js, ECharts and so on.</p>
         </div>
 
         <div class="skill">
             <div class="title">Web App Development</div>
-            <p>Be able to develop web apps using modern web frameworks and technologies such as AngularJS, VueJS, Jasmine, Typescript, Git. Familiar with software design patterns.</p>
+            <p>Be able to develop web apps using modern web frameworks and technologies such as AngularJS, VueJS, Jasmine, Karma, Typescript, ES6, Git, and so on.</p>
         </div>
 
         <div class="skill">
@@ -17,7 +17,7 @@
 
         <div class="skill">
             <div class="title">CMS Platform Development</div>
-            <p>Versed in Drupal, which is one of the most widely used CMS platforms in the world. I have built more than 10 large-scale websites which are used by thousands of people every day.</p>
+            <p>Versed in Drupal, which is one of the most widely used CMS platforms in the world. Built more than 10 large-scale websites which are used by thousands of people every day.</p>
         </div>
 
         <div class="tech-title">Technical Skills</div>

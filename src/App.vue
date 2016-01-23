@@ -7,13 +7,10 @@
 
 <script>
 
-import AppSidebar from './components/AppSidebar.vue';
-import AppBody from './components/AppBody.vue';
-
 export default {
     components: {
-        AppSidebar,
-        AppBody
+        AppSidebar : require('./components/AppSidebar.vue'),
+        AppBody    : require('./components/AppBody.vue')
     }
 };
 
@@ -21,8 +18,6 @@ export default {
 
 <style lang="sass">
 
-@import './vendor/normalize.css';
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 html,
@@ -32,35 +27,14 @@ body,
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-html,
-body,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li {
-    margin: 0;
-    padding: 0;
-}
-
-a,
-a:link,
-a:hover,
-a:active,
-a:visited {
-    text-decoration: none;
-    color: inherit;
+    a,
+    a:link,
+    a:hover,
+    a:active,
+    a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 button {
@@ -78,6 +52,10 @@ button {
     position: relative;
     min-width: 1000px;
     margin: 0 auto;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
     #app-sidebar {

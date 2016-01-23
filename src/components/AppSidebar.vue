@@ -7,13 +7,10 @@
 
 <script>
 
-import PhotoAndName from './PhotoAndName.vue';
-import AnchorList from './AnchorList.vue';
-
 export default {
     components: {
-        PhotoAndName,
-        AnchorList
+        PhotoAndName: require('./PhotoAndName.vue'),
+        AnchorList: require('./AnchorList.vue')
     }
 };
 

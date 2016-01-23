@@ -1,9 +1,13 @@
+window.jQuery = require('jquery');
+require('bootstrap-webpack');
+
 import Vue from 'vue';
-import App from './App';
 
 Vue.config.debug = true;
 
 new Vue({
     el: 'body',
-    components: {App}
+    components: {
+        App: require('./App')
+    }
 });

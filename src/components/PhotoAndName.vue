@@ -1,7 +1,7 @@
 <template>
     <div id="photo-and-name">
         <div class="photo"><img src="../assets/photo.jpg" width="112" height="112"></div>
-        <div class="job-title">Front-end Web Developer</div>
+        <div class="job-title">Front-end Web Developer <br>Senior Associate @ Garena</div>
         <div class="name">Zhang Jianfei</div>
     </div>
 </template>

@@ -1,8 +1,10 @@
 <template>
     <div id="app-body" @scroll="scrollHandler">
-        <sec title="Profile"><profile></profile></sec>
-        <sec title="Skills"><skills></skills></sec>
-        <sec title="Experiences"><experiences></experiences></sec>
+        <v-section title="Profile"><profile></profile></v-section>
+        <v-section title="Skills"><skills></skills></v-section>
+        <v-section title="Experiences"><experiences></experiences></v-section>
+        <v-section title="Education"><education></education></v-section>
+        <v-section title="Hire Me"><hire-me></hire-me></v-section>
     </div>
 </template>
 
@@ -10,17 +12,14 @@
 
 import $ from 'jquery';
 
-import Section from './Section.vue';
-import Profile from './Profile.vue';
-import Skills from './Skills.vue';
-import Experiences from './Experiences.vue';
-
 export default {
     components: {
-        Sec: Section,
-        Profile,
-        Skills,
-        Experiences
+        vSection    : require('./Section.vue'),
+        Profile     : require('./Profile.vue'),
+        Skills      : require('./Skills.vue'),
+        Experiences : require('./Experiences.vue'),
+        Education   : require('./Education.vue'),
+        HireMe      : require('./HireMe.vue'),
     },
     methods: {
         scrollHandler() {

@@ -19,11 +19,9 @@
 
 <script>
 
-import Anchor from './Anchor.vue';
-
 export default {
     components: {
-        Anchor
+        Anchor: require('./Anchor.vue')
     }
 };
 
