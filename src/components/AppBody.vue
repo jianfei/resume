@@ -5,6 +5,10 @@
         <v-section title="Experiences"><experiences></experiences></v-section>
         <v-section title="Education"><education></education></v-section>
         <v-section title="Hire Me"><hire-me></hire-me></v-section>
+        <v-section title="Demo"><demo></demo></v-section>
+        <v-section title="Screenshots"><screenshots></screenshots></v-section>
+
+        <div class="hint">* This profile page is still in Beta Version, Download and Print Feature is coming soon.</div>
     </div>
 </template>
 
@@ -20,6 +24,8 @@ export default {
         Experiences : require('./Experiences.vue'),
         Education   : require('./Education.vue'),
         HireMe      : require('./HireMe.vue'),
+        Demo        : require('./Demo.vue'),
+        Screenshots : require('./Screenshots.vue')
     },
     methods: {
         scrollHandler() {
@@ -52,6 +58,20 @@ export default {
 <style lang="sass">
 
 @import '../shared';
+
+.hint {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    display: none;
+
+    font-size: 12px;
+
+    @media (min-width: 980px) {
+        display: block;
+    }
+
+}
 
 #app-body {
     font-size: 16px;

@@ -50,7 +50,7 @@ button {
 
 #app {
     position: relative;
-    min-width: 1000px;
+    min-width: 720px;
     margin: 0 auto;
 
     font-family: 'Open Sans', sans-serif;
@@ -58,21 +58,23 @@ button {
     line-height: 1.4;
 }
 
-    #app-sidebar {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
+    @media (min-width: 980px) {
+        #app-sidebar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
 
-        width: 240px;
-    }
+            width: 240px;
+        }
 
-    #app-body {
-        position: absolute;
-        top: 0;
-        left: 240px;
-        right: 0;
-        bottom: 0;
+        #app-body {
+            position: absolute;
+            top: 0;
+            left: 240px;
+            right: 0;
+            bottom: 0;
+        }
     }
 
 </style>

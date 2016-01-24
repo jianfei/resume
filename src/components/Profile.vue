@@ -3,32 +3,40 @@
         <p>A <strong>Front-end Web Developer</strong> with 3 years of freelance experience + 3 years of full-time experience in a local leading IT company. A high motivated quick-learner, adaptable and hard-working person with strong technical skills. Possess strong ability to write high-quality, high-performance and clean code to build websites and web applications.</p> <br>
 
         <p><strong>Personal Information:</strong></p>
-        <ul>
-            <li>Gender: Male</li>
-            <li>Age: 28</li>
-            <li>Marital Status: Married</li>
-            <li>Current Location: Singapore</li>
-            <li>Nationality: China PRC</li>
-            <li>Race: Chinese</li>
-            <li>Religion: Free Thinker</li>
-            <li>Pass Holding: Employment Pass</li>
-            <li>Languages: Chinese (Native), English</li>
-            <li>Expected Salary: S$5,000</li>
-        </ul>
+        <div id="list-data">
+            <data-block label="Gender">Male</data-block>
+            <data-block label="Age">28</data-block>
+            <data-block label="Marital Status">Married</data-block>
+            <data-block label="Current Location">Singapore</data-block>
+            <data-block label="Nationality">China PRC</data-block>
+            <data-block label="Race">Chinese</data-block>
+            <data-block label="Religion">Free Thinker</data-block>
+            <data-block label="Pass Holding">Employment Pass</data-block>
+            <data-block label="Languages">Chinese, English</data-block>
+            <data-block label="Expected Salary">S$5,000+</data-block>
+        </div>
     </div>
 </template>
 
 <script>
 
 export default {
+    components: {
+        dataBlock: require('./DataBlock.vue')
+    }
 };
 
 </script>
 
 <style lang="sass">
 
+@import '../shared';
+
 #profile {
-    ul { margin-left: 20px; }
+    #list-data {
+        padding: 0;
+        margin: 0 -10px;
+    }
 }
 
 </style>

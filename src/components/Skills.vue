@@ -7,7 +7,7 @@
 
         <div class="skill">
             <div class="title">Web App Development</div>
-            <p>Be able to develop web apps using modern web frameworks and technologies such as AngularJS, VueJS, Jasmine, Karma, Typescript, ES6, Git, and so on.</p>
+            <p>Be able to develop web apps using modern web frameworks and technologies such as AngularJS, VueJS, Jasmine, Karma, Typescript, ES6, Git, and so on. Familiar with design patterns.</p>
         </div>
 
         <div class="skill">
@@ -20,39 +20,42 @@
             <p>Versed in Drupal, which is one of the most widely used CMS platforms in the world. Built more than 10 large-scale websites which are used by thousands of people every day.</p>
         </div>
 
-        <div class="tech-title">Technical Skills</div>
-        <ul class="tech-list">
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>LESS</li>
-            <li>SASS</li>
-            <li>Bootstrap</li>
-            <li>AngularJS</li>
-            <li>VueJS</li>
-            <li>ActionScript</li>
-            <li>PHP</li>
-            <li>Drupal</li>
-            <li>Photoshop</li>
-            <li>NPM</li>
-            <li>Bower</li>
-            <li>Gulp</li>
-            <li>Webpack</li>
-            <li>Jasmine</li>
-            <li>Karma</li>
-            <li>Lodash.js</li>
-            <li>Underscore.js</li>
-            <li>ECharts</li>
-            <li>Git</li>
-            <li>Typescript</li>
-            <li>Babel.js</li>
-        </ul>
+        <div class="technique-title">Technical Skills</div>
+        <div class="technique-list">
+            <technique level="3">HTML/CSS</technique>
+            <technique level="3">JavaScript</technique>
+            <technique level="3">jQuery</technique>
+            <technique level="3">LESS</technique>
+            <technique level="3">SASS</technique>
+            <technique level="3">Bootstrap</technique>
+            <technique level="2">AngularJS</technique>
+            <technique level="3">VueJS</technique>
+            <technique level="3">ActionScript</technique>
+            <technique level="1">PHP</technique>
+            <technique level="2">Drupal</technique>
+            <technique level="3">Photoshop</technique>
+            <technique level="3">NPM</technique>
+            <technique level="3">Bower</technique>
+            <technique level="2">Gulp</technique>
+            <technique level="2">Webpack</technique>
+            <technique level="1">Jasmine</technique>
+            <technique level="1">Karma</technique>
+            <technique level="3">Lodash.js</technique>
+            <technique level="3">Underscore.js</technique>
+            <technique level="2">ECharts</technique>
+            <technique level="3">Git</technique>
+            <technique level="2">Typescript</technique>
+            <technique level="3">Babel.js</technique>
+        </div>
     </div>
 </template>
 
 <script>
 
 export default {
+    components: {
+        Technique: require('./Technique.vue')
+    }
 };
 
 </script>
@@ -70,8 +73,7 @@ export default {
         &:nth-child(2n+1) { padding-right: 15px; }
         &:nth-child(2n) { padding-left: 15px; }
 
-
-        @media (min-width: 1300px) {
+        @media (min-width: 1600px) {
             width: 25%;
             padding: 0 10px;
 
@@ -79,28 +81,22 @@ export default {
             &:last-child  { padding-left: 20px; padding-right: 0; }
         }
 
-
-
         .title {
             font-size: 20px;
             font-weight: 700;
         }
     }
 
-    .tech-title {
+    .technique-title {
+        clear: both;
         margin-bottom: 10px;
 
         font-size: 18px;
         font-weight: 700;
     }
 
-    .tech-list {
-        list-style-type: none;
-
-        li {
-            float: left;
-            width: 240px;
-        }
+    .technique-list {
+        margin: 0 -20px;
     }
 }
 

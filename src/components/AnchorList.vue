@@ -30,6 +30,9 @@ export default {
 <style lang="sass">
 
 #anchor-list {
+    display: none;
+
+    @media (min-width: 980px) { display: block; }
 
     .grp-label {
         padding: 20px;
