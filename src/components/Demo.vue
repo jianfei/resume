@@ -57,10 +57,10 @@ export default {
             right: 10px;
             z-index: 1;
 
-            padding-top: 100px;
+            padding-top: 20%;
 
             content: 'View Online Demo';
-            font-size: 36px;
+            font-size: 30px;
             font-weight: bold;
             text-align: center;
 

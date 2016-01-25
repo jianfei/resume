@@ -1,8 +1,17 @@
 <template>
     <div id="hire-me">
-        <p>Hi! If you think I am qualified, please send me an email: <strong>{{email}}</strong>.</p>
+        <p>Hi! If you think I am qualified, please send me an email: <strong>{{email}}</strong> with following details:</p>
+        <ul>
+            <li>Company Name and Location</li>
+            <li>Working Hours</li>
+            <li>Team Size</li>
+            <li>Job Scope</li>
+            <li>Job Requirements</li>
+            <li>Salary Offer and Staff Benefits</li>
+        </ul>
+        <br>
         <button class="btn btn-primary"
-                @click="copyToClipboard">Click to Copy My Email Address</button>
+                @click="copyToClipboard">Click Here to Copy My Email Address</button>
     </div>
 </template>
 

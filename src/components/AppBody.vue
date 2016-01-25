@@ -4,8 +4,8 @@
         <v-section title="Skills"><skills></skills></v-section>
         <v-section title="Experiences"><experiences></experiences></v-section>
         <v-section title="Education"><education></education></v-section>
-        <v-section title="Hire Me"><hire-me></hire-me></v-section>
-        <v-section title="Demo"><demo></demo></v-section>
+        <v-section title="Hire Me!"><hire-me></hire-me></v-section>
+        <v-section title="Online Demo"><demo></demo></v-section>
         <v-section title="Screenshots"><screenshots></screenshots></v-section>
 
         <div class="hint">* This profile page is still in Beta Version, Download and Print Feature is coming soon.</div>
