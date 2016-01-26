@@ -7,8 +7,10 @@
             <li>Team Size</li>
             <li>Job Scope</li>
             <li>Job Requirements</li>
-            <li>Salary Offer and Staff Benefits</li>
+            <li>Salary Offered</li>
+            <li>Staff Benefits</li>
         </ul>
+        <p>And we shall discuss more later.</p>
         <br>
         <button class="btn btn-primary"
                 @click="copyToClipboard">Click Here to Copy My Email Address</button>

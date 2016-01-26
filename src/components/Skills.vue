@@ -1,23 +1,27 @@
 <template>
     <div id="skills">
         <div class="skill">
+            <ring value=".9" color="#2ec7c9">90<span class="percent">%</span></ring>
             <div class="title">Front-end Web Development</div>
-            <p>Be able to develop high-quality web pages using HTML5, CSS3 and JavaScript. Versed in modern web libraries and tools such as jQuery, Underscore.js, Lodash.js, ECharts and so on.</p>
+            <p>Capability to develop high-quality web pages using HTML5, CSS3 and JavaScript. Strong understanding of industry trends. Versed in modern web libraries and tools. </p>
         </div>
 
         <div class="skill">
+            <ring value=".8" color="#b6a2de">80<span class="percent">%</span></ring>
             <div class="title">Web App Development</div>
-            <p>Be able to develop web apps using modern web frameworks and technologies such as AngularJS, VueJS, Jasmine, Karma, Typescript, ES6, Git, and so on. Familiar with design patterns.</p>
+            <p>Capability to develop web apps using modern web frameworks like AngularJS and VueJS. Strong understanding of MVC, MVP, MVVM frameworks and design patterns.</p>
         </div>
 
         <div class="skill">
+            <ring value=".7" color="#5ab1ef">70<span class="percent">%</span></ring>
             <div class="title">Responsive Web Development</div>
-            <p>Be able to create cross-browser compatible and mobile responsive websites. Make your websites nice and fit on PC, iPhone, iPad, Kindle and all screen resolutions.</p>
+            <p>Capability to create cross-browser compatible and mobile responsive websites which fit on all screen resolutions. Experienced in optimizing websites for mobile devices.</p>
         </div>
 
         <div class="skill">
+            <ring value=".7" color="#ffb980">70<span class="percent">%</span></ring>
             <div class="title">CMS Platform Development</div>
-            <p>Versed in Drupal, which is one of the most widely used CMS platforms in the world. Built more than 10 large-scale websites which are used by thousands of people every day.</p>
+            <p>Capability to build CMS Websites. Versed in Drupal, which is one of the most widely used CMS platforms in the world. Specializing in theme development.</p>
         </div>
 
         <div class="technique-title">Technical Skills</div>
@@ -54,13 +58,16 @@
 
 export default {
     components: {
-        Technique: require('./Technique.vue')
+        Technique : require('./Technique.vue'),
+        Ring      : require('./Ring.vue')
     }
 };
 
 </script>
 
 <style lang="sass">
+
+@import '../shared';
 
 #skills {
     .skill {
@@ -69,6 +76,8 @@ export default {
         width: 50%;
         min-height: 100px;
         margin-bottom: 30px;
+
+        text-align: center;
 
         &:nth-child(2n+1) { padding-right: 15px; }
         &:nth-child(2n) { padding-left: 15px; }
@@ -85,6 +94,16 @@ export default {
             font-size: 20px;
             font-weight: 700;
             white-space: nowrap;
+        }
+
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) .title {
+                color: nth($dark-colors, $i);
+            }
+        }
+
+        p {
+            text-align: left;
         }
     }
 

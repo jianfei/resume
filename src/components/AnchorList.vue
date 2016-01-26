@@ -11,7 +11,7 @@
 
         <div group="portfolio" class="grp-label">Portfolio</div>
         <div group="portfolio" class="group">
-            <anchor href="#demo">Online Demo</anchor>
+            <anchor href="#online-demo">Online Demo</anchor>
             <anchor href="#screenshots">Screenshots</anchor>
         </div>
     </div>

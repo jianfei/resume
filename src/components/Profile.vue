@@ -1,6 +1,6 @@
 <template>
     <div id="profile">
-        <p>A <strong>Front-end Web Developer</strong> with 3 years of freelance experience + 3 years of full-time experience in a local leading IT company. A high motivated quick-learner, adaptable and hard-working person with strong technical skills. Possess strong ability to write high-quality, high-performance and clean code to build websites and web applications.</p> <br>
+        <p>A <strong>Front-end Web Developer</strong> with 3 years of freelance experience + 3 years of full-time experience in front-end web developing. A highly motivated quick-learner, adaptable and hard-working person with strong technical skills. Possess strong capability to write high-quality, high-performance and clean code to build websites and web applications.</p> <br>
 
         <p><strong>Personal Information:</strong></p>
         <div id="list-data">
